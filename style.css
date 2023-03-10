@@ -1,0 +1,119 @@
+/* Set background color and font family */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the container */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the clock */
+.clock {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Style the clock face */
+.clock-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the clock hands */
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  background-color: #333;
+  transform-origin: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hour-hand {
+  width: 30%;
+  height: 8px;
+}
+
+.min-hand {
+  width: 40%;
+  height: 6px;
+}
+
+.second-hand {
+  width: 45%;
+  height: 4px;
+  background-color: #f00;
+  z-index: 2;
+}
+
+/* Style the time display */
+.time {
+  font-size: 3em;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the alarm section */
+.alarm {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the form inputs */
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="number"], select {
+  font-size: 1.2em;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+select {
+  width: 70px;
+}
+
+/* Style the alarms list */
+.alarms {
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
